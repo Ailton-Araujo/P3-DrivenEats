@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
@@ -20,77 +20,83 @@
 
 <body>
 
-    <div class="corpo">
-        <div class="menu-topo">
-            <h1>DrivenEats</h1>
-            <h2>Sua comida em 6 minutos</h2>
-        </div>
 
-        <div class="container">
-            <h3>Primeiro seu prato</h3>
-            <div class="opcoes">
+    <div class="menu-topo">
+        <h1>DrivenEats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </div>
 
-                <div class="item">
-                    <img src="./assets/frango_yin_yang.png" alt="">
-                    <p class="nome-item">Frango Yin Yang</p>
-                    <p class="descricao-item">Um pouco de batata, um pouco de salada</p>
-                    <p class="preco">R$ 14,90</p>
+    <div class="container">
+        <h3>Primeiro seu prato</h3>
+        <div class="opcoes pratos">
 
-                </div>
-                <div class="item">
-                    <img src="./assets/frango_yin_yang.png" alt="">
-                    <p class="nome-item">Frango Yin Yang</p>
-                    <p class="descricao-item">Um pouco de batata, um pouco de salada</p>
-                    <p class="preco">R$ 14,90</p>
+            <div data-test="dish" onclick="seletorPrato(this)" class="item">
+                <img src="./assets/frango_yin_yang.png" alt="">
+                <p data-test="item-name" class="nome-item">Frango Yin Yang</p>
+                <p class="descricao-item">Um pouco de batata, um pouco de salada</p>
+                <p data-test="item-price" class="preco-item">R$ 14,90</p>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
 
-                </div>
-                <div class="item">
-                    <img src="./assets/frango_yin_yang.png" alt="">
-                    <p class="nome-item">Frango Yin Yang</p>
-                    <p class="descricao-item">Um pouco de batata, um pouco de salada</p>
-                    <p class="preco">R$ 14,90</p>
+            <div data-test="dish" onclick="seletorPrato(this)" class="item">
+                <img src="./assets/frango_yin_yang.png" alt="">
+                <p data-test="item-name" class="nome-item">Frango Yin Yang</p>
+                <p class="descricao-item">Um pouco de batata, um pouco de salada</p>
+                <p data-test="item-price" class="preco-item">R$ 14,90</p>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
 
-                </div>
+            <div data-test="dish" onclick="seletorPrato(this)" class="item">
+                <img src="./assets/frango_yin_yang.png" alt="">
+                <p data-test="item-name" class="nome-item">Frango Yin Yang</p>
+                <p class="descricao-item">Um pouco de batata, um pouco de salada</p>
+                <p data-test="item-price" class="preco-item">R$ 14,90</p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </div>
         </div>
+    </div>
 
-        <div class="container">
-            <h3>Agora, sua bebida</h3>
-            <div class="opcoes">
+    <div class="container">
+        <h3>Agora, sua bebida</h3>
+        <div class="opcoes bebidas">
 
-                <div class="item">
-                    <img src="./assets/coca-cola.png" alt="">
-                    <p class="nome-item">Coquinha gelada</p>
-                    <p class="descricao-item">Lata 350ml</p>
-                    <p class="preco">R$ 4,90</p>
-                </div>
-
+            <div data-test="dish" onclick="seletorBebida(this)" class="item">
+                <img src="./assets/coca-cola.png" alt="">
+                <p data-test="item-name" class="nome-item">Coquinha gelada</p>
+                <p class="descricao-item">Lata 350ml</p>
+                <p data-test="item-price" class="preco-item">R$ 4,90</p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </div>
+
         </div>
+    </div>
 
-        <div class="container">
-            <h3>Por fim, sua sobremesa</h3>
-            <div class="opcoes">
+    <div class="container">
+        <h3>Por fim, sua sobremesa</h3>
+        <div class="opcoes sobremesas">
 
-                <div class="item">
-                    <img src="./assets/pudim.png" alt="">
-                    <p class="nome-item">Pudim</p>
-                    <p class="descricao-item">Apenas pudim</p>
-                    <p class="preco">R$ 7,90</p>
-                </div>
-
+            <div data-test="dish" onclick="seletorSobremesa(this)" class="item">
+                <img src="./assets/pudim.png" alt="">
+                <p data-test="item-name" class="nome-item">Pudim</p>
+                <p class="descricao-item">Apenas pudim</p>
+                <p data-test="item-price" class="preco-item">R$ 7,90</p>
+                <ion-icon name="checkmark-circle"></ion-icon>
             </div>
-        </div>
 
-        <div class="finalizar">
-            <button>Selecione os 3 itens para fechar o pedido</button>
         </div>
+    </div>
 
+    <div class="finalizar">
+        <button data-test="order-btn" disabled type="button" onclick="fecharPedido()">Selecione os 3 itens para fechar o pedido</button>
     </div>
 
 
 
+
     <script src="script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
 
 </html>
