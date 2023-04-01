@@ -90,7 +90,7 @@ function fecharPedido() {
 
     const mensagemWapp = encodeURIComponent(mensagem);
     console.log(mensagemWapp);
-    window.open(`https://wa.me/+5562993190165?text=${mensagemWapp}`);
+    window.open(`https://wa.me/+5562994903670?text=${mensagemWapp}`);
 }
 
 function cancelarPedido() {
