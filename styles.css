@@ -223,7 +223,7 @@ button:disabled {
     border: 0px;
     background-color: #FFFFFF;
     border-radius: 100px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -236,7 +236,7 @@ button:disabled {
     height: 52px;
     border: 0px;
     background-color: inherit;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
