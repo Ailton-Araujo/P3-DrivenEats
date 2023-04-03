@@ -51,8 +51,7 @@ sobreposicao.classList.remove("escondido");
 
     const fechaPedido = document.querySelector(".confirmar-pedido");
     
-    const dados = document.querySelector(".confirmar-pedido")
-    console.log(dados)
+    const dados = document.querySelector(".confirmar-pedido");
 
     fechaPedido.querySelector(".pratoPedido").innerHTML = nPrato;
     fechaPedido.querySelector(".bebidaPedido").innerHTML = nBebida;
@@ -62,9 +61,9 @@ sobreposicao.classList.remove("escondido");
     fechaPedido.querySelector(".pBebidaPedido").innerHTML = pBebida;
     fechaPedido.querySelector(".pSobremesaPedido").innerHTML = pSobremesa;
 
-    pPratoOp = Number(pPrato.replace('R$ ', '').replace(',', '.'));
-    pBebidaOp = Number(pBebida.replace('R$ ', '').replace(',', '.'));
-    pSobremesaOp = Number(pSobremesa.replace('R$ ', '').replace(',', '.'));
+    const pPratoOp = Number(pPrato.replace('R$ ', '').replace(',', '.'));
+    const pBebidaOp = Number(pBebida.replace('R$ ', '').replace(',', '.'));
+    const pSobremesaOp = Number(pSobremesa.replace('R$ ', '').replace(',', '.'));
 
     pTotal = (pPratoOp + pBebidaOp + pSobremesaOp).toFixed(2);
     pTotal = String(pTotal).replace('.', ',');
@@ -76,8 +75,6 @@ sobreposicao.classList.remove("escondido");
 function fecharPedido() {
     const name = prompt("Digite o seu nome");
     const endereco = prompt("Digite o seu endereço");
-
-
 
     const mensagem = `Olá, gostaria de fazer o pedido:
     - Prato:  ` + nPrato + `
